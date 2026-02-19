@@ -75,8 +75,11 @@ const Wishlist = () => {
                 <div className="relative overflow-hidden">
                   <img
                     src={product.image}
-                    alt={product.name}
+                    alt={`${product.name} handcrafted indian jewellery in wishlist`}
                     className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                    width={640}
+                    height={640}
                   />
 
                   {/* Remove Button */}
