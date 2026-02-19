@@ -14,7 +14,14 @@ const About = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="aspect-[4/5] overflow-hidden">
-            <img src={hero2} alt="Dwarika Naari Heritage" className="w-full h-full object-cover" />
+            <img
+              src={hero2}
+              alt="Dwarika Naari heritage-inspired traditional Indian jewellery craftsmanship"
+              className="w-full h-full object-cover"
+              loading="lazy"
+              width={800}
+              height={1000}
+            />
           </div>
           <div className="space-y-6">
             <h2 className="font-display text-3xl font-semibold text-foreground">Rooted in Indian Heritage</h2>
@@ -41,7 +48,14 @@ const About = () => {
             </p>
           </div>
           <div className="order-1 lg:order-2 aspect-[4/5] overflow-hidden">
-            <img src={hero1} alt="Handcrafted Jewelry" className="w-full h-full object-cover" />
+            <img
+              src={hero1}
+              alt="Handcrafted bridal jewellery collection by Dwarika Naari"
+              className="w-full h-full object-cover"
+              loading="lazy"
+              width={800}
+              height={1000}
+            />
           </div>
         </div>
 

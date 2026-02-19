@@ -69,7 +69,14 @@ const Index = () => {
       <section className="relative h-[75vh] lg:h-[90vh] overflow-hidden">
         {heroSlides.map((slide, index) => (
           <div key={index} className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}>
-            <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
+            <img
+              src={slide.image}
+              alt={`${slide.subtitle} - ${slide.title.replace("\n", " ")} | Dwarika Naari traditional jewellery`}
+              className="w-full h-full object-cover"
+              loading={index === currentSlide ? "eager" : "lazy"}
+              width={1920}
+              height={1080}
+            />
             <div className="absolute inset-0 bg-gradient-to-r from-foreground/70 via-foreground/40 to-transparent" />
           </div>
         ))}
@@ -113,7 +120,14 @@ const Index = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {collections.map((col) => (
             <Link key={col.title} to="/shop" className="group relative aspect-[3/4] overflow-hidden">
-              <img src={col.image} alt={col.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img
+                src={col.image}
+                alt={`${col.title} handcrafted indian jewellery collection by Dwarika Naari`}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
+                width={720}
+                height={960}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="font-display text-xl text-primary-foreground mb-1">{col.title}</h3>
