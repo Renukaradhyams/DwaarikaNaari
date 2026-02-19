@@ -51,8 +51,11 @@ const Navbar = () => {
             <Link to="/" className="flex items-center gap-2.5">
               <img
                 src="/logo.jpg"
-                alt="Dwarika Naari"
+                alt="Dwarika Naari traditional Indian jewellery logo"
                 className="h-14 lg:h-16 w-auto object-contain drop-shadow-md"
+                loading="lazy"
+                width={128}
+                height={64}
               />
               <div className="flex flex-col leading-tight">
                 <span className="font-display text-xl lg:text-2xl font-bold text-gold-deep drop-shadow-sm">

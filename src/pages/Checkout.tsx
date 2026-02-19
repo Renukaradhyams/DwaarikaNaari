@@ -150,7 +150,14 @@ const Checkout = () => {
                     {items.map((it) => (
                       <div key={it.product.id} className="flex items-center gap-3">
                         <div className="w-14 h-14 rounded-lg overflow-hidden bg-background border border-border shrink-0">
-                          <img src={it.product.image} alt={it.product.name} className="w-full h-full object-cover" />
+                          <img
+                            src={it.product.image}
+                            alt={`${it.product.name} handcrafted jewellery in checkout`}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                            width={56}
+                            height={56}
+                          />
                         </div>
                         <div className="min-w-0 flex-1">
                           <p className="font-body text-sm text-foreground truncate">{it.product.name}</p>

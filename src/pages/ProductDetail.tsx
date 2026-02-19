@@ -57,7 +57,14 @@ const ProductDetail = () => {
           {/* Image */}
           <div className="space-y-3">
             <div className="relative aspect-square overflow-hidden bg-card group">
-              <img src={allImages[activeImage]} alt={product.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img
+                src={allImages[activeImage]}
+                alt={`${product.name} traditional handcrafted jewellery by Dwarika Naari`}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="eager"
+                width={900}
+                height={900}
+              />
               {product.originalPrice && (
                 <span className="absolute top-4 left-4 bg-accent text-accent-foreground font-body text-[10px] tracking-wider uppercase px-3 py-1">Sale</span>
               )}
@@ -79,7 +86,14 @@ const ProductDetail = () => {
               <div className="flex gap-2 overflow-x-auto pb-1">
                 {allImages.map((img, i) => (
                   <button key={i} onClick={() => setActiveImage(i)} className={`shrink-0 w-16 h-16 lg:w-20 lg:h-20 overflow-hidden border-2 transition-all duration-200 ${activeImage === i ? "border-gold" : "border-transparent opacity-60 hover:opacity-100"}`}>
-                    <img src={img} alt={`${product.name} view ${i + 1}`} className="w-full h-full object-cover" />
+                    <img
+                      src={img}
+                      alt={`${product.name} detailed view ${i + 1} - Indian jewellery design`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      width={160}
+                      height={160}
+                    />
                   </button>
                 ))}
               </div>
