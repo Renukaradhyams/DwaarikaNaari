@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://dwarikanaari.com/</loc>
+    <image:image>
+      <image:loc>https://dwarikanaari.com/logo.jpg</image:loc>
+      <image:title>Dwarika Naari Traditional Jewellery Brand Logo</image:title>
+      <image:caption>Dwarika Naari handcrafted Indian jewellery logo and brand identity.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dwarikanaari.com/assets/jewelry-hero-1.jpg</image:loc>
+      <image:title>Traditional Bridal Jewellery Hero Collection</image:title>
+      <image:caption>Traditional bridal jewellery crafted by Dwarika Naari for weddings and festive elegance.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dwarikanaari.com/assets/jewelry-hero-2.jpg</image:loc>
+      <image:title>Handcrafted Indian Jewellery for Brides</image:title>
+      <image:caption>Handcrafted Indian jewellery from Dwarika Naari's luxury bridal collection.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dwarikanaari.com/assets/collection-bridal.jpg</image:loc>
+      <image:title>Bridal Jewellery Collection by Dwarika Naari</image:title>
+      <image:caption>Premium bridal jewellery collection featuring traditional Indian craftsmanship.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dwarikanaari.com/assets/Product_images/PRO20-01-1000.jpg</image:loc>
+      <image:title>Bridal Statement Necklace in Traditional Indian Style</image:title>
+      <image:caption>Handcrafted bridal statement necklace by Dwarika Naari with rich traditional detailing.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dwarikanaari.com/assets/Product_images/PRO33-01-1000.jpg</image:loc>
+      <image:title>Grand Bridal Bangles Handcrafted Jewellery</image:title>
+      <image:caption>Grand handcrafted bridal bangles by Dwarika Naari for wedding and festive occasions.</image:caption>
+    </image:image>
+  </url>
+</urlset>

@@ -51,9 +51,11 @@ const ProductCard = ({ product }: ProductCardProps) => {
         {/* Product Image */}
         <img
           src={product.image}
-          alt={product.name}
+          alt={`${product.name} handcrafted indian jewellery by Dwarika Naari`}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           loading="lazy"
+          width={600}
+          height={600}
         />
 
         {/* Hover Overlay */}

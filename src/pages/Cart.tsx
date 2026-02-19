@@ -69,8 +69,11 @@ const Cart = () => {
                 >
                   <img
                     src={item.product.image}
-                    alt={item.product.name}
+                    alt={`${item.product.name} traditional jewellery selected in cart`}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    width={96}
+                    height={112}
                   />
                 </Link>
 
