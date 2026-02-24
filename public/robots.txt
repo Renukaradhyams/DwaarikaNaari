@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /admin/
+
+User-agent: Googlebot-Image
+Allow: /
+
+Sitemap: https://dwarikanaari.com/sitemap.xml
+Sitemap: https://dwarikanaari.com/sitemap-images.xml
