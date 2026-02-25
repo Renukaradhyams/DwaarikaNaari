@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, Star, ChevronLeft, ChevronRight, Phone } from "lucide-react";
 import hero1 from "@/assets/jewelry-hero-1.jpg";
 import hero2 from "@/assets/jewelry-hero-2.jpg";
 import collectionBridal from "@/assets/collection-bridal.jpg";
@@ -95,6 +95,13 @@ const Index = () => {
               >
                 {heroSlides[currentSlide].cta} <ArrowRight size={14} />
               </Link>
+              <a
+                href="tel:9632232166"
+                className="inline-flex items-center gap-3 font-body text-xs tracking-[0.25em] uppercase gradient-gold-btn text-primary-foreground px-10 py-4 shadow-lg hover:shadow-xl transition-all duration-500"
+                aria-label="Call Dwarika Naari"
+              >
+                Call Now <Phone size={14} />
+              </a>
             </div>
           </div>
         </div>

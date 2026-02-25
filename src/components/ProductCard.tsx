@@ -7,9 +7,10 @@ import { toast } from "sonner";
 
 interface ProductCardProps {
   product: Product;
+  eagerImage?: boolean;
 }
 
-const ProductCard = ({ product }: ProductCardProps) => {
+const ProductCard = ({ product, eagerImage = false }: ProductCardProps) => {
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
   const { addToCart } = useCart();
   const isWishlisted = isInWishlist(product.id);
@@ -53,7 +54,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
           src={product.image}
           alt={`${product.name} handcrafted indian jewellery by Dwarika Naari`}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          loading="lazy"
+          loading={eagerImage ? "eager" : "lazy"}
+          decoding="async"
+          fetchPriority={eagerImage ? "high" : "low"}
           width={600}
           height={600}
         />

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Mail, Youtube } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { Instagram, Mail, Phone, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -103,6 +102,22 @@ const Footer = () => {
 
             </div>
 
+
+            <div className="mt-6 space-y-2">
+              <p className="font-body text-xs tracking-widest uppercase opacity-40">Call Us</p>
+              <a
+                href="tel:9632232166"
+                className="block font-body text-sm opacity-60 hover:opacity-100 hover:text-gold-light transition-all"
+              >
+                <span className="inline-flex items-center gap-2"><Phone size={14} /> 9632232166</span>
+              </a>
+              <a
+                href="tel:8951260760"
+                className="block font-body text-sm opacity-60 hover:opacity-100 hover:text-gold-light transition-all"
+              >
+                <span className="inline-flex items-center gap-2"><Phone size={14} /> 8951260760</span>
+              </a>
+            </div>
             <p className="mt-6 font-body text-xs opacity-40">
               Subscribe for exclusive offers & new arrivals.
             </p>
